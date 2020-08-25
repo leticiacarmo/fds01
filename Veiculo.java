@@ -1,24 +1,9 @@
-public Interface Veiculo{
-    private int placa;
-    private String descricao;
-    private double preco;
+public interface Veiculo {
+    double abastece(double litros);
 
-    public int getPlaca() {
-        return placa;
-    }
+    double dirige(double distancia);
 
-    public String getDescricao() {
-        return descricao;
-    }
+    void ligarTurbo();
 
-    public double getPreco() {
-        return preco;
-    }
-
-
-    @Override
-    public String toString() {
-        return "Veiculo [placa=" + codigo + ", descricao=" + descricao + ", preço=" + preco"]";
-    }
+    void desligarTurbo();
 }
-    
