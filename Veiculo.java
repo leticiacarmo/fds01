@@ -1,3 +1,4 @@
 public interface Veiculo{
- void veiculo();
+    void veiculo();
+
 }
