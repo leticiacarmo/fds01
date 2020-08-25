@@ -2,25 +2,25 @@ import java.util.ArrayList;
 
 public class Catalogo{
 
-    private ArrayList<Veiculo> carros;
-    private ArrayList<Veiculo> motos;
-    private ArrayList<Veiculo> caminhoes;
+    private ArrayList<Carro> carros;
+    private ArrayList<Moto> motos;
+    private ArrayList<Caminhao> caminhoes;
 
     public Catalogo() {
-        carros = new ArrayList<Veiculo>();
-        motos= new ArrayList<Veiculo>();
-        caminhoes= new ArrayList<Veiculo>();
+        carros = new ArrayList<Carro>();
+        motos= new ArrayList<Moto>();
+        caminhoes= new ArrayList<Caminhao>();
     }
 
-    public void addCarro (Veiculo carro){
+    public void addCarro (Carro carro){
         carros.add(carro);
 
     }
-    public void addMoto (Veiculo moto){
+    public void addMoto (Moto moto){
         motos.add(moto);
 
     }
-    public void addCaminhao (Veiculo caminhao){
+    public void addCaminhao (Caminhao caminhao){
         caminhoes.add(caminhao);
     }
 
@@ -39,7 +39,7 @@ public class Catalogo{
         return "Catalogo{" +
                 "carros=" + carros +
                 ", motos=" + motos +
-                ", caminhoes=" + caminhoes +
+                ", caminhões=" + caminhoes +
                 '}';
     }
 }
