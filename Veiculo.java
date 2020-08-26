@@ -3,7 +3,7 @@ public interface Veiculo {
 
     double dirige(double distancia);
 
-    void ligarTurbo();
+    void acelerar();
 
-    void desligarTurbo();
+    void frear();
 }
