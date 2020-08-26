@@ -1,33 +1,18 @@
+import java.util.ArrayList;
+
 public class Catalogo{
-    private ArrayList<Veiculo> carro;
-    private ArrayList<Veiculo> moto;
-    private ArrayList<Veiculo> caminhao;
+    private ArrayList<Veiculo> veiculo;
 
     private Catalogo() {
-        carro = new ArrayList<Veiculo>;
-        moto= new ArrayList<Veiculo>;
-        caminhao= new ArrayList<Veiculo>;
+        veiculo = new ArrayList<Veiculo>;
     }
 
-    public void addCarro (Veiculo carro){
-        veiculos.add(carro);
+    public void addVeiculo (Veiculo veiculo){
+        veiculos.add(veiculo);
 
     }
-    public void addMoto (Veiculo moto){
-        veiculos.add(moto);
+    public void removeVeiculo (Veiculo veiculo){
+        veiculos.remove(veiculo);
 
-    }
-    public void addCaminhao (Veiculo caminhao){
-        veiculos.add(caminhao);
-    }
-
-    public void removeCarro (Veiculo carro){
-        veiculos.remove(carro);
-
-    }public void removeMoto (Veiculo moto){
-        veiculos.remove(moto);
-
-    }public void removeCaminhao (Veiculo caminhao){
-        veiculos.remove(caminhao);
     }
 }
