@@ -21,37 +21,23 @@ public class Carro implements Veiculo {
         this.delta = 5;
     }
 
-    public String getPlaca() {
-        return placa;
-    }
+    public String getPlaca() { return placa; }
 
-    public String getMarca() {
-        return marca;
-    }
+    public String getMarca() { return marca; }
 
-    public double getPreco() {
-        return preco;
-    }
+    public double getPreco() { return preco; }
 
-    public int getQuantidadePortas() {
-        return quantidadePortas;
-    }
+    public int getQuantidadePortas() { return quantidadePortas; }
 
-    public double getCombustivel() {
-        return combustivel;
-    }
+    public double getCombustivel() { return combustivel; }
 
-    public int getVelocidadeAtual() {
-        return velocidadeAtual;
-    }
+    public int getVelocidadeAtual() { return velocidadeAtual; }
 
-    public int getVelocidadeMaxima() {
-        return velocidadeMaxima;
-    }
+    public int getVelocidadeMaxima() { return velocidadeMaxima; }
 
-    public int getDelta() {
-        return delta;
-    }
+    public int getDelta() { return delta; }
+
+
 
     @Override
     public String toString() {

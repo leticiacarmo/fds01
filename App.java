@@ -33,7 +33,6 @@ public class App {
         System.out.println(c2.toString());
         System.out.println(c3.toString());
 
-
         System.out.println("\n");
         System.out.println("------------------Catálogo de Caminhões----------------------------------");
 
@@ -93,7 +92,6 @@ public class App {
         System.out.println(moto1.toString());
         System.out.println(moto2.toString());
         System.out.println(moto3.toString());
-
-
+        
     }
 }

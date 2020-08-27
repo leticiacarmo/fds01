@@ -1,3 +1,4 @@
+import java.time.LocalTime;
 import java.util.ArrayList;
 
 public class Catalogo {
@@ -9,29 +10,35 @@ public class Catalogo {
 
     public Catalogo() {
         carros = new ArrayList<Carro>();
-        motos= new ArrayList<Moto>();
-        caminhoes= new ArrayList<Caminhao>();
+        motos = new ArrayList<Moto>();
+        caminhoes = new ArrayList<Caminhao>();
     }
 
-    public void addCarro (Carro carro){
+    public void addCarro(Carro carro) {
         carros.add(carro);
 
     }
-    public void addMoto (Moto moto){
+
+    public void addMoto(Moto moto) {
         motos.add(moto);
 
     }
-    public void addCaminhao (Caminhao caminhao){
+
+    public void addCaminhao(Caminhao caminhao) {
         caminhoes.add(caminhao);
     }
 
-    public void removeCarro (Veiculo carro){
+    public void removeCarro(Veiculo carro) {
         caminhoes.remove(carro);
 
-    }public void removeMoto (Veiculo moto){
+    }
+
+    public void removeMoto(Veiculo moto) {
         caminhoes.remove(moto);
 
-    }public void removeCaminhao (Veiculo caminhao){
+    }
+
+    public void removeCaminhao(Veiculo caminhao) {
         caminhoes.remove(caminhao);
     }
 
