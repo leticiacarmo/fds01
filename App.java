@@ -1,45 +1,94 @@
-public class App{
-    public static void main(String args[])
-    {
+public class App {
+    public static void main(String args[]) {
         System.out.println("\n");
         System.out.println("------------------Catálogo de Carros----------------------------------");
 
-        Catalogo carro1 = new Catalogo();
-        carro1.addCarro(new Carro("KWID","RENAULT",43000.00,4));
-        Catalogo carro2 = new Catalogo();
-        carro2.addCarro(new Carro("SANDERO","RENAULT",35000.00,4));
-        Catalogo carro3 = new Catalogo();
-        carro3.addCarro(new Carro("HB20","HYUNDAY",41000.00,4));
-//        carro1.veiculo();
-//        carro2.veiculo();
-//        carro3.veiculo();
+        Catalogo lista = new Catalogo();
 
-        System.out.println(carro1.toString());
-        System.out.println(carro2.toString());
-        System.out.println(carro3.toString());
+        Carro c1;
+        Carro c2;
+        Carro c3;
+
+        c1 = new Carro("ABC-FF", "Renault", 43000.00, 4, 40);
+        c2 = new Carro("kHL-FE", "Ford", 35000.00, 4, 60);
+        c3 = new Carro("VDI-HR", "Hyunday", 41000.00, 4, 50);
+
+        lista.addCarro(c1);
+        lista.addCarro(c2);
+        lista.addCarro(c3);
+
+        c1.abastece(100);
+        c1.acelerar();
+        c1.dirige(90);
+        c1.frear();
+
+        c2.abastece(70);
+        c2.acelerar();
+        c2.dirige(30);
+        c2.frear();
+
+        c3.abastece(90);
+
+        System.out.println(c1.toString());
+        System.out.println(c2.toString());
+        System.out.println(c3.toString());
+
 
         System.out.println("\n");
         System.out.println("------------------Catálogo de Caminhões----------------------------------");
-        Catalogo caminhao1 = new Catalogo();
-        caminhao1.addCaminhao(new Caminhao("VM 260","MARCOPOLO",250000.00,16));
-        Catalogo caminhao2 = new Catalogo();
-        caminhao1.addCaminhao(new Caminhao("710","MERCEDES",110000.00,16));
-        Catalogo caminhao3 = new Catalogo();
-        caminhao1.addCaminhao(new Caminhao("FH 460","VOLVO",350000.00,16));
+
+        Caminhao caminhao1;
+        Caminhao caminhao2;
+        Caminhao caminhao3;
+
+
+        caminhao1 = new Caminhao("VML-260", "MARCOPOLO", 250000.00, 16, 110);
+        caminhao2 = new Caminhao("JKO-710", "MERCEDES", 110000.00, 8, 90);
+        caminhao3 = new Caminhao("ISO-834", "VOLVO", 115000.00, 8, 80);
+
+
+        lista.addCaminhao(caminhao1);
+        lista.addCaminhao(caminhao2);
+        lista.addCaminhao(caminhao3);
+
+
+        caminhao1.abastece(300);
+        caminhao1.acelerar();
+        caminhao1.dirige(140);
+        caminhao1.acelerar();
+        caminhao1.frear();
+
+        caminhao2.abastece(97);
+        caminhao2.dirige(70);
+
+        caminhao3.abastece(110);
+        caminhao3.dirige(35);
 
         System.out.println(caminhao1.toString());
         System.out.println(caminhao2.toString());
         System.out.println(caminhao3.toString());
 
-
         System.out.println("\n");
         System.out.println("------------------Catálogo de Motos----------------------------------");
-        Catalogo moto1 = new Catalogo();
-        moto1.addMoto(new Moto("NEO 125","YAMAHA",28000.00,2));
-        Catalogo moto2 = new Catalogo();
-        moto2.addMoto(new Moto("BIZ","HONDA",12000.00,2));
-        Catalogo moto3 = new Catalogo();
-        moto3.addMoto(new Moto("BURGMAN","SUZUKI",24000.00,2));
+
+        Moto moto1;
+        Moto moto2;
+        Moto moto3;
+        moto1 = new Moto("JBK-234", "YAMAHA", 28000.00, 150, 70);
+        moto2 = new Moto("HRC-123", "HONDA", 12000.00, 125, 90);
+        moto3 = new Moto("BMN", "SUZUKI", 24000.00, 250, 150);
+
+        lista.addMoto(moto1);
+        lista.addMoto(moto2);
+        lista.addMoto(moto3);
+
+        moto1.abastece(45);
+        moto1.acelerar();
+        moto1.dirige(30);
+        moto1.frear();
+
+        moto2.abastece(50);
+        moto3.abastece(70);
 
         System.out.println(moto1.toString());
         System.out.println(moto2.toString());

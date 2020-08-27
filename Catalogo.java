@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 
-public class Catalogo{
+public class Catalogo {
+    private ArrayList<Veiculo> veiculos;
 
     private ArrayList<Carro> carros;
     private ArrayList<Moto> motos;
