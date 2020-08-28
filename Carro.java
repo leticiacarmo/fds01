@@ -20,38 +20,22 @@ public class Carro implements Veiculo {
         this.velocidadeMaxima = 240;
         this.delta = 5;
     }
+    public String getPlaca() { return placa; }
 
-    public String getPlaca() {
-        return placa;
-    }
+    public String getMarca() { return marca; }
 
-    public String getMarca() {
-        return marca;
-    }
+    public double getPreco() { return preco; }
 
-    public double getPreco() {
-        return preco;
-    }
+    public int getQuantidadePortas() { return quantidadePortas; }
 
-    public int getQuantidadePortas() {
-        return quantidadePortas;
-    }
+    public double getCombustivel() { return combustivel; }
 
-    public double getCombustivel() {
-        return combustivel;
-    }
+    public int getVelocidadeAtual() { return velocidadeAtual; }
 
-    public int getVelocidadeAtual() {
-        return velocidadeAtual;
-    }
+    public int getVelocidadeMaxima() { return velocidadeMaxima; }
 
-    public int getVelocidadeMaxima() {
-        return velocidadeMaxima;
-    }
+    public int getDelta() { return delta; }
 
-    public int getDelta() {
-        return delta;
-    }
 
     @Override
     public String toString() {
@@ -60,9 +44,11 @@ public class Carro implements Veiculo {
                 + ", velocidade máxima: " + getVelocidadeMaxima() + "}";
     }
 
+
+
     @Override
     public double abastece(double litros) {
-        if (litros > 0.0 && litros < 45.0){
+        if (litros > 0.0 && litros < 100.0){
             combustivel += litros;
         }
         return combustivel;
@@ -100,6 +86,6 @@ public class Carro implements Veiculo {
         if (velocidadeAtual >= 5)
             velocidadeAtual -= 5;
         else
-            velocidadeAtual = 0;        
+            velocidadeAtual = 0;
     }
 }

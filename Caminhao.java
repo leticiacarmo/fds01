@@ -60,7 +60,9 @@ public class Caminhao implements Veiculo {
     @Override
     public String toString() {
         return "Caminhão {" + "placa: " + getPlaca() + ", marca: " + getMarca() + ", preco:" + getPreco()
-                + ", quantidade de portas: " + getQuantidadeRodas() + ", combustivel no tanque: " + getCombustivel()
+
+                + ", quantidade de rodas: " + getQuantidadeRodas() + ", combustivel no tanque: " + getCombustivel()
+
                 + ", velocidade máxima:" + getVelocidadeMaxima() + "}";
     }
 
@@ -105,5 +107,6 @@ public class Caminhao implements Veiculo {
             velocidadeAtual -= 10;
         else
             velocidadeAtual = 0;        
+
     }
 }

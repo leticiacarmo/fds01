@@ -4,7 +4,7 @@ public class Moto implements Veiculo {
     private double preco;
     private int cilindradas;
     private double combustivel;
-    private final double consumoPorLitro;    
+    private final double consumoPorLitro;
     private int velocidadeAtual;
     private int velocidadeMaxima;
     private final int delta;
@@ -66,7 +66,7 @@ public class Moto implements Veiculo {
 
     @Override
     public double abastece(double litros) {
-        if (litros > 0.0 && litros < 16.0){
+        if (litros > 0.0 && litros < 80.0){
             combustivel += litros;
         }
         return combustivel;
