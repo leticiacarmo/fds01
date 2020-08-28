@@ -13,9 +13,9 @@ public class App {
         c2 = new Carro("kHL-FE", "Ford", 35000.00, 4, 60);
         c3 = new Carro("VDI-HR", "Hyunday", 41000.00, 4, 50);
 
-        lista.addCarro(c1);
-        lista.addCarro(c2);
-        lista.addCarro(c3);
+        lista.addVeiculo(c1);
+        lista.addVeiculo(c2);
+        lista.addVeiculo(c3);
 
         c1.abastece(100);
         c1.acelerar();
@@ -46,9 +46,9 @@ public class App {
         caminhao3 = new Caminhao("ISO-834", "VOLVO", 115000.00, 8, 80);
 
 
-        lista.addCaminhao(caminhao1);
-        lista.addCaminhao(caminhao2);
-        lista.addCaminhao(caminhao3);
+        lista.addVeiculo(caminhao1);
+        lista.addVeiculo(caminhao2);
+        lista.addVeiculo(caminhao3);
 
 
         caminhao1.abastece(300);
@@ -77,9 +77,9 @@ public class App {
         moto2 = new Moto("HRC-123", "HONDA", 12000.00, 125, 90);
         moto3 = new Moto("BMN", "SUZUKI", 24000.00, 250, 150);
 
-        lista.addMoto(moto1);
-        lista.addMoto(moto2);
-        lista.addMoto(moto3);
+        lista.addVeiculo(moto1);
+        lista.addVeiculo(moto2);
+        lista.addVeiculo(moto3);
 
         moto1.abastece(45);
         moto1.acelerar();
@@ -92,6 +92,10 @@ public class App {
         System.out.println(moto1.toString());
         System.out.println(moto2.toString());
         System.out.println(moto3.toString());
-        
+
+        System.out.println("\n");
+        System.out.println("\n");
+
+
     }
 }

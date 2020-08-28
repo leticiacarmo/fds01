@@ -1,53 +1,20 @@
-import java.time.LocalTime;
 import java.util.ArrayList;
 
 public class Catalogo {
     private ArrayList<Veiculo> veiculos;
 
-    private ArrayList<Carro> carros;
-    private ArrayList<Moto> motos;
-    private ArrayList<Caminhao> caminhoes;
-
     public Catalogo() {
-        carros = new ArrayList<Carro>();
-        motos = new ArrayList<Moto>();
-        caminhoes = new ArrayList<Caminhao>();
+        veiculos = new ArrayList<Veiculo>();
     }
 
-    public void addCarro(Carro carro) {
-        carros.add(carro);
-
-    }
-
-    public void addMoto(Moto moto) {
-        motos.add(moto);
+    public void addVeiculo(Veiculo veiculo) {
+        veiculos.add(veiculo);
 
     }
 
-    public void addCaminhao(Caminhao caminhao) {
-        caminhoes.add(caminhao);
-    }
-
-    public void removeCarro(Veiculo carro) {
-        caminhoes.remove(carro);
+    public void removeVeiculo(Veiculo veiculo) {
+        veiculos.remove(veiculo);
 
     }
 
-    public void removeMoto(Veiculo moto) {
-        caminhoes.remove(moto);
-
-    }
-
-    public void removeCaminhao(Veiculo caminhao) {
-        caminhoes.remove(caminhao);
-    }
-
-    @Override
-    public String toString() {
-        return "Catalogo{" +
-                "carros=" + carros +
-                ", motos=" + motos +
-                ", caminhões=" + caminhoes +
-                '}';
-    }
 }
