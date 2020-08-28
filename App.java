@@ -93,9 +93,5 @@ public class App {
         System.out.println(moto2.toString());
         System.out.println(moto3.toString());
 
-        System.out.println("\n");
-        System.out.println("\n");
-
-
     }
 }

@@ -16,5 +16,15 @@ public class Catalogo {
         veiculos.remove(veiculo);
 
     }
+    
+//Filtro
+//    public Veiculo pesquisar(double umPreco) {
+//        String car = null;
+//        for (Veiculo v : veiculos)
+//            if (v.abastece(umPreco) >= umPreco);
+////            car = car.add(v);
+////            return car;
+//
+//    }
 
 }
