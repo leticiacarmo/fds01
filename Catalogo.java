@@ -16,5 +16,4 @@ public class Catalogo {
         veiculos.remove(veiculo);
 
     }
-
 }
